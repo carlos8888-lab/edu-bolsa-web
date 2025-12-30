@@ -1,9 +1,0 @@
-{% extends "base.html" %}
-{% block title %}Dashboard{% endblock %}
-{% block content %}
-  <div style="max-width:980px;margin:24px auto;padding:0 16px;color:#e2e8f0;">
-    <h1>Dashboard ✅</h1>
-    <p>Estás logueado como: <b>{{ current_user.username }}</b></p>
-    <p><a href="{{ url_for('logout') }}">Cerrar sesión</a></p>
-  </div>
-{% endblock %}
